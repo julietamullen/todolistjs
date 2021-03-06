@@ -236,4 +236,7 @@ option {
     .add-todo {
         min-width: 90%;
     }
+    .todo-input {
+        width: fit-content;
+    }
     }
