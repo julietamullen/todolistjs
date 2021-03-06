@@ -228,10 +228,9 @@ option {
     }
 
 @media (max-width: 600px) {
-
     form {
-        min-width: 80%;
         display: flex;
         flex-direction: column;
+        min-width: 100%;
     }
     }
