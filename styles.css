@@ -81,7 +81,7 @@ form button:hover {
 
 ::placeholder {
     color: rgb(255, 255, 255, 0.8);
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .add-todo {
