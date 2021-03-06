@@ -32,6 +32,7 @@ header, form {
 
 form {
     width: 60%;
+    max-width: 100%;
     align-items: center;
     justify-content: space-around;
     padding-top: 2rem;
@@ -43,11 +44,12 @@ form input, form button {
     border: none;
     background-color: transparent;
     color: white;
-    border-bottom: 2px solid #426a5a;
 }
 
 form input {
     flex: 1;
+    position: relative;
+    right: 0px;
 }
 
 form input:focus {
@@ -58,6 +60,8 @@ form button {
     cursor: pointer;
     color: #426a5a;
     transition: all 0.3s ease;
+    position: relative;
+    left: 0px;
 }
 
 form button:hover {
@@ -67,6 +71,7 @@ form button:hover {
 .wraper {
     min-width: 80vw;
     min-height: 80vh;
+    max-width: 100vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -77,6 +82,12 @@ form button:hover {
 ::placeholder {
     color: rgb(255, 255, 255, 0.8);
     opacity: 1;
+}
+
+.add-todo {
+    border-bottom: 2px solid #426a5a;
+    display: flex;
+    width: 70%;
 }
 .todo-container {
     display: flex;
@@ -171,7 +182,6 @@ select {
     width: 100%
 }
 .select {
-    margin: 1rem;
     position: relative;
     overflow: hidden;
     min-width: 30%;
@@ -205,14 +215,23 @@ option {
     color: black
 }
 
-@media (max-width: 600px) {
-    .select {
-        min-width: 50%;
-    }
+@media (max-width: 900px) {
     .todo-container {
         width: 100%;
     }
     .todo-div {
         width: 100%;
+    }
+    form {
+        min-width: 80%;
+    }
+    }
+
+@media (max-width: 600px) {
+
+    form {
+        min-width: 80%;
+        display: flex;
+        flex-direction: column;
     }
     }
