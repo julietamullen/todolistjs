@@ -233,4 +233,7 @@ option {
         flex-direction: column;
         min-width: 100%;
     }
+    .add-todo {
+        min-width: 90%;
+    }
     }
